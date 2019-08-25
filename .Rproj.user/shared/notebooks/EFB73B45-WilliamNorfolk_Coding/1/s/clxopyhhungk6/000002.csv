@@ -1,0 +1,7 @@
+"0","```r
+logten_pop_africa <- log10(population_africa)
+
+logtenpop_vs_life_africa <- data.frame( log10population = logten_pop_africa, lifexcpectancy = life_expectancy_africa)
+
+plot(logtenpop_vs_life_africa)
+```"

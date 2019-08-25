@@ -1,0 +1,9 @@
+"0","```r
+#Load dslabs library and gapminder data set.
+library(dslabs)
+
+data(gapminder)
+
+#The gapminder data set is a collection of health and income outcomes for 184 countries from 1960 to 2016.
+
+```"

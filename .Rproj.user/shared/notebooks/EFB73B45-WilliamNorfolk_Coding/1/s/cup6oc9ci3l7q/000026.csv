@@ -1,0 +1,4 @@
+"0",""
+"0","Africa_ %>%"
+"0","  ggplot() + "
+"0","  geom_point(aes(log(population), life_expectancy, color = country))"

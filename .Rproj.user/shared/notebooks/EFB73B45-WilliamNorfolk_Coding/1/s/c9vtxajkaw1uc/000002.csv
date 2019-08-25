@@ -1,0 +1,67 @@
+"0","```r
+#Create a new object by extracting the data from the year 2000 from africadata. 
+#Create an index to select for the year 2000.
+
+year2000 <- gapminder$year == \"2000\"
+
+#Combine the new index with africadata to select for Africa and the year 2000 combined.
+
+africa2000 <- africadata & year2000
+
+#Apply this index to all variables in the gapminder data set. 
+
+year2000 <- gapminder$year[africa2000] 
+region2000 <- gapminder$region[africa2000]
+country2000 <- gapminder$country[africa2000]
+infantmort2000 <- gapminder$infant_mortality[africa2000]
+lifeexpect2000 <- gapminder$life_expectancy[africa2000]
+fertility2000 <- gapminder$fertility[africa2000]
+gdp2000 <- gapminder$gdp[africa2000]
+continent2000 <- gapminder$continent[africa2000]
+population2000 <- gapminder$population[africa2000]
+
+#Create a data frame with the newly specified data for Africa and 2000. 
+
+africa2000df <- data.frame(year = year2000, country = country2000, population = population2000, region = region2000, infant_mortality = infantmort2000, life_expectancy = lifeexpect2000, fertility = fertility2000, gdp = gdp2000, continent = continent2000)
+
+str(africa2000df)
+```"
+"1","'data.frame':	51 obs. of  9 variables:
+ $ year            : int  2000 2000 2000 2000 2000 2000 2000 2000 2000 2000 ...
+ $ country         : Factor w/ 185 levels \"Albania\",\"Algeria\",..: 2 3 18 22 26 27 29 31 32 33 ...
+ $ population      : num  31183658 15058638 6949366 1736579 11607944 ...
+ $ region          : Factor w/ 22 levels \"Australia and New Zealand\",..: 11 10 20 17 20 5 10 20 10 10 ...
+ $ infant_mortality: num  33.9 128.3 89.3 52.4 96.2 ...
+ $ life_expectancy : num  73.3 52.3 57.2 47.6 52.6 46.7 54.3 68.4 45.3 51.5 ...
+ $ fertility       : num  2.51 6.84 5.98 3.41 6.59 7.06 5.62 3.7 5.45 7.35 ...
+ $ gdp             : num  5.48e+10 9.13e+09 2.25e+09 5.63e+09 2.61e+09 ...
+ $ continent       : Factor w/ 5 levels \"Africa\",\"Americas\",..: 1 1 1 1 1 1 1 1 1 1 ...
+"
+"0","```r
+summary(africa2000df)
+```"
+"1","      year              country     population       
+ Min.   :2000   Algeria     : 1   Min.   :    81154  
+ 1st Qu.:2000   Angola      : 1   1st Qu.:  2304687  
+ Median :2000   Benin       : 1   Median :  8799165  
+ Mean   :2000   Botswana    : 1   Mean   : 15659800  
+ 3rd Qu.:2000   Burkina Faso: 1   3rd Qu.: 17391242  
+ Max.   :2000   Burundi     : 1   Max.   :122876723  
+                (Other)     :45                      
+                       region   infant_mortality life_expectancy
+ Eastern Africa           :16   Min.   : 12.30   Min.   :37.60  
+ Western Africa           :16   1st Qu.: 60.80   1st Qu.:51.75  
+ Middle Africa            : 8   Median : 80.30   Median :54.30  
+ Northern Africa          : 6   Mean   : 78.93   Mean   :56.36  
+ Southern Africa          : 5   3rd Qu.:103.30   3rd Qu.:60.00  
+ Australia and New Zealand: 0   Max.   :143.30   Max.   :75.00  
+ (Other)                  : 0                                   
+   fertility          gdp               continent 
+ Min.   :1.990   Min.   :2.019e+08   Africa  :51  
+ 1st Qu.:4.150   1st Qu.:1.274e+09   Americas: 0  
+ Median :5.550   Median :3.238e+09   Asia    : 0  
+ Mean   :5.156   Mean   :1.155e+10   Europe  : 0  
+ 3rd Qu.:5.960   3rd Qu.:8.654e+09   Oceania : 0  
+ Max.   :7.730   Max.   :1.329e+11                
+                                                  
+"

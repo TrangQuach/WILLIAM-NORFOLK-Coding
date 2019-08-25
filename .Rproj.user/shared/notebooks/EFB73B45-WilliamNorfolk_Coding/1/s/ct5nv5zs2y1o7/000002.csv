@@ -1,0 +1,23 @@
+"0","```r
+population_africa <- gapminder$population[africadata]
+
+pop_vs_life_africa <- data.frame(population = population_africa, lifeexpectancy = life_expectancy_africa)
+
+str(pop_vs_life_africa)
+```"
+"1","'data.frame':	2907 obs. of  2 variables:
+ $ population    : num  11124892 5270844 2431620 524029 4829291 ...
+ $ lifeexpectancy: num  47.5 36 38.3 50.3 35.2 ...
+"
+"0","```r
+summary(pop_vs_life_africa)
+```"
+"1","   population        lifeexpectancy 
+ Min.   :    41538   Min.   :13.20  
+ 1st Qu.:  1605232   1st Qu.:48.23  
+ Median :  5570982   Median :53.98  
+ Mean   : 12235961   Mean   :54.38  
+ 3rd Qu.: 13888152   3rd Qu.:60.10  
+ Max.   :182201962   Max.   :77.60  
+ NA's   :51                         
+"

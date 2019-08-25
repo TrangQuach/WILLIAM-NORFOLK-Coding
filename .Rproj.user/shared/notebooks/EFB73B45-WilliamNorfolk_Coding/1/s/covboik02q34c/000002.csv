@@ -1,0 +1,23 @@
+"0","```r
+#Assign only the African countries to a new object titled africadata.
+
+africadata <- gapminder$continent == \"Africa\"
+
+#To assign a new object use the <- to the right of the chosen object name. All African countries can be accessed in gapminder through the continent variable. The accessor $ is used to access specific variables within the data frame. To determine if a country is in Africa or not, africadata is assigned as a logical vector using == to determine if the continent variable is listed as \"Africa\" or not. 
+
+str(africadata)
+```"
+"1"," logi [1:10545] FALSE TRUE TRUE FALSE FALSE FALSE ...
+"
+"0","```r
+#The logical vector africadata will output information as TRUE or FALSE depending on the continent variable of each country. In this example, 10545 different data points are maeasured. Countries in Africa receive the output TRUE whereas all other continents receive a FALSE. 
+
+summary(africadata)
+```"
+"1","   Mode   FALSE    TRUE 
+logical    7638    2907 
+"
+"0","```r
+#The summary shows results of the logical vector. Of the total 10545 measured countries, 2907 of them are located in Africa. These values can be verified by reviewing the previous summary(gapminder) output in the console and subtracting the African data points from the total measurements under the continent variable. 
+
+```"

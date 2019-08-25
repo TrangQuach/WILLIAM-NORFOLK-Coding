@@ -1,0 +1,4 @@
+"0",""
+"0","#Use the abline function to fit a line to the plot according to the new linear model object. "
+"0",""
+"0","abline(fit1)"

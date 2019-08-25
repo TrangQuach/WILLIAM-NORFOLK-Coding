@@ -1,0 +1,5 @@
+"0","#Fit line to scatterplot for life expectancy verses infant mortality."
+"0",""
+"0","#Replot the scatterplot."
+"0",""
+"0","plot(infantmort2000, lifeexpect2000)"

@@ -1,0 +1,23 @@
+"0","```r
+summary(fit2)
+
+```"
+"1","
+Call:
+lm(formula = year2000$life_expectancy ~ year2000$population)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-18.429  -4.602  -2.568   3.800  18.802 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         5.593e+01  1.468e+00  38.097   <2e-16 ***
+year2000$population 2.756e-08  5.459e-08   0.505    0.616    
+---
+Signif. codes:  0 â€˜***â€™ 0.001 â€˜**â€™ 0.01 â€˜*â€™ 0.05 â€˜.â€™ 0.1 â€˜ â€™ 1
+
+Residual standard error: 8.524 on 49 degrees of freedom
+Multiple R-squared:  0.005176,	Adjusted R-squared:  -0.01513 
+F-statistic: 0.2549 on 1 and 49 DF,  p-value: 0.6159
+"
