@@ -1,9 +1,0 @@
-"0","```r
-#Fit line to scatterplot for life expectancy verses population size.
-
-plot(logtenpop2000, lifeexpect2000)
-abline(fit2)
-
-#Here we see no distinct correlation with the fit line which is consistent with the p-value. 
-
-```"

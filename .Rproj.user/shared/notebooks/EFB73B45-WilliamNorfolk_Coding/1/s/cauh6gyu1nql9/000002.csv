@@ -1,5 +1,0 @@
-"0","```r
-#Recreate the plots for infant mortality verses life expectancy, and population verses life expectancy. 
-
-plot(infantmort2000, lifeexpect2000)
-```"

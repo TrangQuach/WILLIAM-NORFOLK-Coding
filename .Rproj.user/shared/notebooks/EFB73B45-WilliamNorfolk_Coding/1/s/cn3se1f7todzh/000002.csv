@@ -1,7 +1,0 @@
-"0","```r
-#Fit line to scatterplot for life expectancy verses infant mortality.
-
-plot(infantmort2000, lifeexpect2000)
-abline(fit1)
-
-```"
