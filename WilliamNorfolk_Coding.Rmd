@@ -3,9 +3,10 @@ title: "William Norfolk-Coding Exercise"
 author: "William Norfolk"
 date: "8/24/2019"
 output:
+  word_document: default
   html_document:
     df_print: paged
- 
+    
 ---
 
 ```{r}
@@ -333,5 +334,3 @@ Africa2000_ %>%
 
 
 ```
-
-
